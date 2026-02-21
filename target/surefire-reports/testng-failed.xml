@@ -8,6 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="testCases.Testcase_03_DDT">
+        <methods>
+          <include name="Setup"/>
+          <include name="TearDown"/>
+          <include name="verify_login" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- testCases.Testcase_03_DDT -->
       <class name="testCases.TestCase_02_Propertiesfile">
         <methods>
           <include name="Setup"/>
